@@ -1,0 +1,68 @@
+# Prospect Sources — client-ops
+# Configure the directories and search queries client-ops scans for new leads.
+
+sources:
+
+  # Zimbabwe business directories
+  - name: ZimTrade Directory
+    type: directory
+    url: https://www.zimtrade.co.zw
+    sectors: [legal, agricultural, ngo, housing, sme]
+    enabled: true
+
+  - name: Yellow Pages Zimbabwe
+    type: directory
+    url: https://www.yellowpages.co.zw
+    keywords: [law firm, attorney, legal services, farm, agro, church, housing association]
+    enabled: true
+
+  - name: NewsDay Business
+    type: news
+    url: https://www.newsday.co.zw/business
+    keywords: [digital transformation, website, tech, SME, startup]
+    enabled: true
+
+  # LinkedIn searches (manual — provide as search URLs)
+  - name: LinkedIn Legal ZW
+    type: linkedin
+    search_url: "https://www.linkedin.com/search/results/companies/?keywords=law+firm+zimbabwe&origin=GLOBAL_SEARCH_HEADER"
+    sector: legal
+    enabled: true
+
+  - name: LinkedIn Agro ZW
+    type: linkedin
+    search_url: "https://www.linkedin.com/search/results/companies/?keywords=agriculture+zimbabwe&origin=GLOBAL_SEARCH_HEADER"
+    sector: agricultural
+    enabled: true
+
+  - name: LinkedIn NGO ZW
+    type: linkedin
+    search_url: "https://www.linkedin.com/search/results/companies/?keywords=ngo+zimbabwe&origin=GLOBAL_SEARCH_HEADER"
+    sector: ngo
+    enabled: true
+
+  # Sector-specific sources
+  - name: Law Society of Zimbabwe
+    type: directory
+    url: https://www.lawsociety.org.zw
+    sector: legal
+    enabled: true
+
+  - name: SDA Southern Africa Union
+    type: directory
+    url: https://sauc.adventist.org
+    sector: faith-based
+    enabled: true
+
+  - name: PRAZ Procurement
+    type: procurement
+    url: https://www.praz.org.zw
+    keywords: [ICT, website, software, digital, automation]
+    enabled: false  # enable when targeting government-adjacent NGOs
+
+# Global filters
+filters:
+  require_zimbabwe: true
+  require_identifiable_contact: true
+  min_estimated_score: 3.0
+  exclude_if_in_scan_history: true

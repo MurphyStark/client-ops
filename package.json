@@ -1,0 +1,20 @@
+{
+  "name": "client-ops",
+  "version": "1.0.0",
+  "description": "AI-powered client acquisition & proposal pipeline for MurphAgency",
+  "type": "module",
+  "scripts": {
+    "pdf": "node generate-pdf.mjs",
+    "merge": "node merge-tracker.mjs",
+    "verify": "node verify-pipeline.mjs",
+    "patterns": "node analyze-patterns.mjs"
+  },
+  "dependencies": {
+    "playwright": "^1.40.0",
+    "js-yaml": "^4.1.0",
+    "marked": "^9.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
