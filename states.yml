@@ -1,0 +1,23 @@
+states:
+  - name: Identified
+    description: Lead found, not yet evaluated
+  - name: Evaluated
+    description: Scored and reported, pending outreach decision
+  - name: Contacted
+    description: Outreach sent
+  - name: Responded
+    description: Prospect has responded
+  - name: Discovery
+    description: Discovery call scheduled or completed
+  - name: Proposal
+    description: Proposal sent
+  - name: Negotiating
+    description: In active scope or price negotiation
+  - name: Won
+    description: Project confirmed and deposit received
+  - name: Lost
+    description: Prospect chose another or no decision
+  - name: Nurture
+    description: Not ready now — keep warm
+  - name: SKIP
+    description: Does not fit — do not pursue

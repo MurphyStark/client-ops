@@ -1,0 +1,53 @@
+# MurphAgency Commercial Profile
+# Copy to config/profile.yml and fill in your details.
+# config/profile.yml is gitignored.
+
+agency:
+  name: MurphAgency
+  founder: Mordecai
+  location: Harare, Zimbabwe
+  email: hello@murphagency.org
+  website: https://murphagency.org
+  tagline: "Full-stack digital agency — web, automation, and WhatsApp solutions for Southern Africa"
+
+targeting:
+  primary_sectors: [legal, agricultural, faith-based, housing, ngo]
+  secondary_sectors: [sme, fintech, logistics]
+  geographic_focus:
+    primary: Zimbabwe
+    secondary: [Zambia, Botswana, South Africa]
+  ideal_project_size_usd:
+    min: 1500
+    sweet_spot: 3000
+    max: 15000
+
+services:
+  lead:
+    - Professional websites (HTML/CSS/JS, Flask)
+    - Client portals (Flask + Supabase)
+    - WhatsApp chatbots (Meta Cloud API + n8n)
+  supporting:
+    - n8n automation systems
+    - GAS registration systems
+    - Investment memos and pitch decks
+    - Monthly retainer support
+
+stack: [Node.js, Flask, Supabase, Netlify, n8n, WhatsApp Business API, GAS, Playwright]
+
+deal_breakers:
+  budget_below_usd: 500
+  technologies: [WordPress, iOS apps, .NET, Android native]
+  no_identifiable_decision_maker: true
+  government_procurement: true
+
+payment_terms:
+  upfront_percent: 50
+  on_delivery_percent: 50
+  proposal_validity_days: 14
+  retainer_discount_percent: 10
+
+narrative: |
+  MurphAgency is the only full-stack digital agency in Zimbabwe combining
+  WhatsApp automation, web portals, and payment integration in a single stack.
+  We deliver for law firms, housing associations, churches, and agricultural
+  enterprises. Founder Mordecai leads every project personally.
